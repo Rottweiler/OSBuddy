@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSBuddy", "OSBuddy\OSBuddy.csproj", "{3C656D82-C109-488B-8947-06963DE490BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSBuddy.Demo", "OSBuddy.Demo\OSBuddy.Demo.csproj", "{A809E7BE-A38F-4677-87D7-193A672C3C3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C656D82-C109-488B-8947-06963DE490BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C656D82-C109-488B-8947-06963DE490BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C656D82-C109-488B-8947-06963DE490BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C656D82-C109-488B-8947-06963DE490BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A809E7BE-A38F-4677-87D7-193A672C3C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A809E7BE-A38F-4677-87D7-193A672C3C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A809E7BE-A38F-4677-87D7-193A672C3C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A809E7BE-A38F-4677-87D7-193A672C3C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70B71DAC-8370-4C27-806C-AB3A0A6C1EC0}
+	EndGlobalSection
+EndGlobal
