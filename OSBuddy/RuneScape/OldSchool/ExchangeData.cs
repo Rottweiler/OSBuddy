@@ -10,7 +10,7 @@ namespace OSBuddy.RuneScape.OldSchool
     public sealed class ExchangeData
     {
         [DataMember(Name = "overall")]
-        public int GeneralPrice { get; protected set; }
+        public int Price { get; protected set; }
 
         [DataMember(Name = "buying")]
         public int High { get; protected set; }
