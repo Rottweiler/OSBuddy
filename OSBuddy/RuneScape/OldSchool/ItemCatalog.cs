@@ -4,8 +4,6 @@ using System.Text.RegularExpressions;
 
 namespace OSBuddy.RuneScape.OldSchool
 {
-    //http://www.rsbuddy.com/items.json
-    //http://api.rsbuddy.com/grandExchange/?a=guidePrice&i=2
     public sealed class ItemCatalog
     {
         public List<Item> Items

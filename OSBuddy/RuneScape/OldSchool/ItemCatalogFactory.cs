@@ -16,6 +16,7 @@ namespace OSBuddy.RuneScape.OldSchool
 
         public ItemCatalog GetItemCatalog()
         {
+            // todo: put in it's own function
             var files = Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.InternetCache), "*.icat", SearchOption.TopDirectoryOnly);
             if (files.Length > 0)
             {

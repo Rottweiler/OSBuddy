@@ -29,7 +29,15 @@ namespace OSBuddy.RuneScape.OldSchool
         [DataMember(Name = "low_alchemy")]
         public int LowAlchemy { get; protected set; }
 
-        // todo: GetPrice (buy), GetValue (sell), GetPrice(bool flipPrice), GetValue(bool flipValue)
+        public static explicit operator int(Item item)
+        {
+            return item.Id;
+        }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 
 }

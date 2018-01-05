@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuneScape\OldSchool\Exchange.cs" />
+    <Compile Include="RuneScape\OldSchool\ExchangeData.cs" />
     <Compile Include="RuneScape\OldSchool\Item.cs" />
     <Compile Include="RuneScape\OldSchool\ItemCatalog.cs" />
     <Compile Include="RuneScape\OldSchool\ItemCatalogFactory.cs" />

@@ -14,6 +14,7 @@ namespace OSBuddy.Demo
             var first = result.FirstOrDefault();
 
             Console.WriteLine(first.Name + ", is it members only? " + (first.MembersOnly ? " Yes." : "No."));
+            Console.WriteLine("Current value: " + Exchange.GetValue(first));
             Console.ReadLine();
         }
     }
