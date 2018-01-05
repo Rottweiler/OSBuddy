@@ -1,5 +1,5 @@
 # OSBuddy
-OSBuddy API access library with new features for C# or Visual Basic .NET
+OSBuddy API written in C# .NET to pull and analyze items and Grand Exchange data from RuneScape. Includes features that will help display the data in a fashionable manner. Usable with most .NET languages.
 
 ## Example usage
 ```csharp
