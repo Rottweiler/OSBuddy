@@ -12,9 +12,10 @@ namespace OSBuddy.Demo
             var catalog = factory.GetItemCatalog();
             var result = catalog.Search("red partyhat");
             var first = result.FirstOrDefault();
+            var value = Exchange.GetValue(first);
 
             Console.WriteLine(first.Name + ", is it members only? " + (first.MembersOnly ? " Yes." : "No."));
-            Console.WriteLine("Current value: " + Exchange.GetValue(first));
+            Console.WriteLine("Current value: " + Exchange.GetFormattedCurrency(value, false));
             Console.ReadLine();
         }
     }
