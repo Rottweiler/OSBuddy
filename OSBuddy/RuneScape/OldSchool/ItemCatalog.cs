@@ -39,15 +39,16 @@ namespace OSBuddy.RuneScape.OldSchool
                 {
                     yield return item;
                 }
-
-                if (normalizedItem.StartsWith(normalizedQuery))
+                else if (normalizedItem.StartsWith(normalizedQuery))
                 {
                     yield return item;
                 }
-
-                if (Regex.Match(normalizedItem, normalizedQuery).Success)
+                else if (Regex.Match(normalizedItem, normalizedQuery).Success)
                 {
                     yield return item;
+                } else
+                {
+                    continue;
                 }
             }
         }

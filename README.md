@@ -15,12 +15,18 @@ namespace OSBuddy.Demo
         {
             var factory = new ItemCatalogFactory();
             var catalog = factory.GetItemCatalog();
-            var result = catalog.Search("red partyhat");
-            var first = result.FirstOrDefault();
-            var value = Exchange.GetValue(first);
+            var results = catalog.Search("red partyhat");
 
-            Console.WriteLine(first.Name + ", is it members only? " + (first.MembersOnly ? " Yes." : "No."));
-            Console.WriteLine("Current value: " + Exchange.GetFormattedCurrency(value, false));
+            var i = 0;
+            foreach(var item in results)
+            {
+                i++;
+                if(item.Tradeable)
+                {
+                    Console.WriteLine(item.Name + " Value: " + Exchange.GetValue(item));
+                }
+            }
+
             Console.ReadLine();
         }
     }
