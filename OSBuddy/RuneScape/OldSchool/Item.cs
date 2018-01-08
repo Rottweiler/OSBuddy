@@ -6,9 +6,9 @@ namespace OSBuddy.RuneScape.OldSchool
     public sealed class Item
     {
         [DataMember(Name = "id")]
-        public int Id { get; protected set; } 
+        public int Id { get; protected set; }
 
-        [DataMember(Name =  "stackable")]
+        [DataMember(Name = "stackable")]
         public bool Stackable { get; protected set; }
 
         [DataMember(Name = "name")]
@@ -28,6 +28,9 @@ namespace OSBuddy.RuneScape.OldSchool
 
         [DataMember(Name = "low_alchemy")]
         public int LowAlchemy { get; protected set; }
+
+        [IgnoreDataMember]
+        public bool Noted { get { return Name.EndsWith("(noted)"); } }
 
         public static explicit operator int(Item item)
         {
